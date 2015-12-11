@@ -1,3 +1,25 @@
+<nav class="navbar navbar-default">
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed"
+     data-toggle="collapse" data-target="#menu-collapse">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar">{{link-to "Recipes" "recipes"}}</span>
+       <span class="icon-bar">{{link-to 'New Recipe' 'recipes.new'}}</span>
+       <span class="icon-bar"></span>
+     </button>
+     
+   </div>
+
+   <div class="collapse navbar-collapse" id="menu-collapse">
+     <ul class="nav navbar-nav">
+       <li>{{link-to "Recipes" "recipes"}}</li>
+       <li>{{link-to 'New Recipe' 'recipes.new'}}</li>
+     </ul>
+   </div>
+ </div>
+</nav>
+
 <h2 id="title">Welcome to Cookbook</h2>
 
 {{outlet}}
