@@ -7,12 +7,12 @@
    {{input value=model.name      placeholder="Recipe Name"}}
    <br>
    <label>Ingredients:</label>
-   {{input valueBinding='model.proportions.quantity'  placeholder="Quantity"}}
-  {{!--  {{input value=proportion.unit        placeholder="Unit"}}
-   {{input value=proportion.ingredient  placeholder="Ingredient Name"}} --}}
+   {{input value=model.proportions.quantity  placeholder="Quantity"}}
+   {{input value=model.proportions.unit        placeholder="Unit"}}
+   {{input value=model.proportions.ingredient  placeholder="Ingredient Name"}}
    <br>
    <label>Steps:</label>
-   {{input value=model.steps   placeholder="Step"}}
+   {{input value=model.steps.description   placeholder="Step"}}
    <br>
    <input type="submit" value="Save" class="primary">
    <button {{action "cancel"}}>Cancel</button>
