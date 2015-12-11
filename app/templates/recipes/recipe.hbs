@@ -1,0 +1,19 @@
+<div class='row'>
+  <h2>{{model.name}}</h2>
+  <br>
+  <img src={{model.image_url}}>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    <h4>Ingredients</h4>
+    {{#each model.proportions as |proportion|}}
+      <p>{{proportion.quantity}} {{propotion.unit.name}} {{proportion.ingredient.name}}</p>
+    {{/each}}
+  </div>
+  <div class="col-xs-6">
+    <h4>Steps</h4>
+    {{#each model.steps as |step|}}
+      <p>{{step.description}}</p>
+    {{/each}}
+  </div>
+</div>
