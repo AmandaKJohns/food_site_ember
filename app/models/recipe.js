@@ -7,5 +7,6 @@ export default DS.Model.extend({
   note: DS.attr('string'),
   categories: DS.hasMany('category', {async: true}),
   proportions: DS.hasMany('proportion', {async: true}),
-  steps: DS.hasMany('step', {async: true})
+  steps: DS.hasMany('step', {async: true}),
+  quantity: DS.attr('num')
 });

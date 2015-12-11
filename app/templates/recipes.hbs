@@ -1,6 +1,10 @@
+<div class='container'>
+<div class='row'>
+  {{link-to "Recipes" "recipes"}}
+  {{link-to 'New Recipe' 'recipes.new'}}
+</div>
 <div class="row">
 <div class="col-xs-3">
-{{link-to "Recipes" "recipes"}}
   {{#each model as |recipe|}}
     <p>{{link-to recipe.name 'recipes.recipe' recipe}}</p>
   {{/each}}
@@ -11,4 +15,5 @@
   {{outlet}}
 </div>
 
+</div>
 </div>

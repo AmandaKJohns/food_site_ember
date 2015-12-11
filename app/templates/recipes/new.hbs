@@ -1,0 +1,22 @@
+<h1>New Recipe</h1>
+
+<form {{action "save" on="submit"}}>
+ <h2>{{errorMessage}}</h2>
+ <fieldset>
+  <label>Recipe Name:</label>
+   {{input value=model.name      placeholder="Recipe Name"}}
+   <br>
+   <label>Ingredients:</label>
+   {{input value=model.quantity  placeholder="Quantity"}}
+  {{!--  {{input value=proportion.unit        placeholder="Unit"}}
+   {{input value=proportion.ingredient  placeholder="Ingredient Name"}} --}}
+   <br>
+   <label>Steps:</label>
+   {{input value=model.steps   placeholder="Step"}}
+   <br>
+   <input type="submit" value="Save" class="primary">
+   <button {{action "cancel"}}>Cancel</button>
+ </fieldset>
+</form>
+
+{{outlet}}
